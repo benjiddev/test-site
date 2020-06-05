@@ -2,8 +2,44 @@
     padding: 20px;
     text-align: center;
     background: blue;
+    border: solid black;
     color: white;
     font-size: 20px;
   }
 
+  #lbox {
+    float: left;
+    width: 400px;
+    height: 200px;
+    background-color: goldenrod;
+    border: solid black;
+    text-align: center;
+  }
+
+  #cbox {
+    float: left;
+    width: 400px;
+    height: 200px;
+    background-color: goldenrod;
+    border: solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+  }
+
+  #rbox {
+    float: right;
+    width: 400px;
+    height: 200px;
+    background-color: goldenrod;
+    border: solid black;
+    text-align: center;
+
+  }
+
+
+
+
   
+
