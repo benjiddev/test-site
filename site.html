@@ -5,29 +5,36 @@
     <script type="text/javascript" src="functions.js"></script>
   </head>
   <body>
+
+    <div id="result-box">
+        <p id="result"></p>
+    </div>
     <div class=header>
         <h1>Paper Scissors Socks</h1>
+        <hr id="hr">
         <p>Buy one, get one free!</p>
     </div>
     
-<div>
-    <div onclick="rockoff('Paper')" id="lbox">
+<div id="box-container">
+    <div onclick="rockoff('Paper')" id="left-box" class="box">
         <h1>Paper</h1>
-        <img src="img/paper-png.png" alt="Paper" style="width:100px;height:100px;" >
+        <img src="img/paper-png.png" alt="Paper">
     </div>
-    <div onclick="rockoff('Scissors')" id="cbox">
+    <div onclick="rockoff('Scissors')" id="center-box" class="box">
         <h1 >Scissors</h1>
-        <img src="img/scissors-png.png" alt="Scissors" style="width:100px;height:100px;">
+        <img src="img/scissors-png.png" alt="Scissors">
     </div>
-    <div onclick="rockoff('Socks')" id="rbox">
+    <div onclick="rockoff('Socks')" id="right-box" class="box">
         <h1 >Socks</h1>
-        <img src="img/sock-png.png" alt="Socks" style="width:100px;height:100px;">
+        <img src="img/sock-png.png" alt="Socks">
     </div>
+
+
 </div>
 
-<div id="lbox">
-    <h1 id="result"></h1>
-</div>
+
 
     </body>
+
+
   </html>
