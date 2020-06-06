@@ -10,6 +10,19 @@
     height: 100px;
   }
 
+  .box2 {
+    width: 400px;
+    height: 100px;
+    background-color: goldenrod;
+    border: solid black;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  p {
+      padding-left: 10px;
+  }
+
   .box {
     box-shadow: 0 10px 20px rgba(0,0, 0, 0.19), 0 6px 6px rgba(0,0, 0, 0.23);
     width: 400px;
@@ -20,14 +33,17 @@
     border-radius: 5px;
   }
 
+
+
   #box-container {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       /* margin: 0 -5px; */
   }
   
   #left-box {
-    float: left;
+    /* float: left; */
     /* margin: 0 5px; */
   }
 
@@ -36,7 +52,7 @@
   }
 
   #center-box {
-    float: left;
+    /* float: left; */
     margin-left: 20px;
     margin-right: 20px;
     /* margin: 0 5px; */
@@ -44,13 +60,14 @@
   }
 
   #right-box {
-    float: right;
+    /* float: right; */
     /* margin: 0 5px; */
   }
 
   #result-box {
+    display: flex;
     margin: auto;
-    width: 50%;
+    width: 400px;
     background-color: goldenrod;
     border: solid black;
     text-align: center;
@@ -65,6 +82,14 @@
   }
 
 
+  .carousel-master {     
+    width: 400px;
+  }
+
+  .carousel-img {
+    width: 150px;
+    height: 150px;
+  }
 
 
   

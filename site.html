@@ -4,37 +4,49 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="functions.js"></script>
   </head>
-  <body>
-
-    <div id="result-box">
-        <p id="result"></p>
-    </div>
+<body>
     <div class=header>
         <h1>Paper Scissors Socks</h1>
         <hr id="hr">
         <p>Buy one, get one free!</p>
     </div>
     
-<div id="box-container">
-    <div onclick="rockoff('Paper')" id="left-box" class="box">
+    <div id="box-container">
+        <div onclick="rockoff('Paper')" id="left-box" class="box">
         <h1>Paper</h1>
         <img src="img/paper-png.png" alt="Paper">
-    </div>
-    <div onclick="rockoff('Scissors')" id="center-box" class="box">
+        </div>
+        <div onclick="rockoff('Scissors')" id="center-box" class="box">
         <h1 >Scissors</h1>
         <img src="img/scissors-png.png" alt="Scissors">
-    </div>
-    <div onclick="rockoff('Socks')" id="right-box" class="box">
+        </div>
+        <div onclick="rockoff('Socks')" id="right-box" class="box">
         <h1 >Socks</h1>
         <img src="img/sock-png.png" alt="Socks">
+        </div>
     </div>
-
-
+</body>
+<hr id="hr">
+<div class="carousel-master">
+    <div>
+        <img class="carousel-img" src="img/paper-png.png" alt="Paper">
+        <img class="carousel-img" src="img/scissors-png.png" alt="Scissors">
+        <img class="carousel-img" src="img/sock-png.png" alt="Socks">
+    </div>
 </div>
 
 
 
-    </body>
 
+<hr id="hr">
+<div id="result-box">
+    <p id="result"></p>
+</div>
+    <footer>
+       <div class="box2">
+        <p>Github: <a href="https://github.com/benjiddev/test-site">Link</a> </p>
+        <p>FCC: </p>
+       </div>
+    </footer>
 
   </html>
