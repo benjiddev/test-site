@@ -3,8 +3,36 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="functions.js"></script>
+    <script>
+    var firstIndex = 0;
+    //changeSlide(firstIndex)
+    
+    function changeSlide(num){
+        firstIndex += num;
+        //var index = 0;
+        //var newIndex = index + num;
+        var images = document.getElementsByClassName("carousel-images");
+        //var i;
+        for (i = 0; i < images.length; i++) {
+        if (i === firstIndex){
+            images[i].style.display = "inline"; 
+        }else {
+            images[i].style.display = "none";
+        }
+            
+        //for (i = 0; i < images.length; i++) {
+        //    images[i].style.display = "inline";
+        //}
+        //var currentIndex = 1;
+        
+        //var newIndex = currentIndex + num;
+        //images[newIndex].style.display = "inline";
+        }
+    }
+    
+    </script>
   </head>
-<body>
+<body onload="changeSlide(0)">
     <div class=header>
         <h1>Paper Scissors Socks</h1>
         <hr id="hr">
@@ -28,11 +56,15 @@
 </body>
 <hr id="hr">
 <div class="carousel-master">
-    <div>
-        <img class="carousel-img" src="img/paper-png.png" alt="Paper">
-        <img class="carousel-img" src="img/scissors-png.png" alt="Scissors">
-        <img class="carousel-img" src="img/sock-png.png" alt="Socks">
+    <div > 
+        <img class="carousel-images" src="img/paper-png.png" alt="Paper">
+        <img class="carousel-images" src="img/scissors-png.png" alt="Scissors">
+        <img class="carousel-images" src="img/sock-png.png" alt="Socks">
     </div>
+    <button onclick="changeSlide(0)">First images</button>
+    <button onclick="changeSlide(-1)">Previous</button>
+    <button onclick="changeSlide(1)">Next</button>
+    
 </div>
 
 

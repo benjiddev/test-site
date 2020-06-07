@@ -84,11 +84,22 @@
 
   .carousel-master {     
     width: 400px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-style: dotted;
+    
   }
 
-  .carousel-img {
+  .carousel-images {
+    display: none;
     width: 150px;
     height: 150px;
+      
+  }
+
+  #first-carousel-img {
+    display: inline;
+
   }
 
 

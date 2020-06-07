@@ -30,6 +30,7 @@ function rockoff(choice){
 
 }
 
-//console.log(rockoff("Scissors"));
 
-//console.log("hello");
+
+
+//changeSlide(1)
